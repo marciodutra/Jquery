@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Curso jQuery
+    </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        
+    </style>
+    
+</head>
+    
+
+<body>
+    
+   <div>
+        <span>
+            <h3>
+                CFB Cursos
+            </h3>
+            <p>
+                Curso de Jquery
+            </p>
+            <h2>
+                Seletores parent
+            </h2>
+            <p>
+                Siblings
+            </p>            
+        </span>
+   </div>
+
+    <script>
+      $('h3').next().css({'border': '1px solid #f00'})
+      //prev, prevAll, prevUntil
+      //next, nextAll, nextUntil      
+    </script>
+        
+</body>
+
+</html>
