@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            border: none;
+        }
+
+        .menu{
+            background-color: #ddd;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .itemMenu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #128;
+            color: #fff;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        h3{
+            text-align: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div id="menu" class="menu">
+        <div class="itemMenu">home</div>
+        <div class="itemMenu">jQuery</div>
+        <div class="itemMenu">Canvas</div>
+        <div class="itemMenu">python</div>
+        <div class="itemMenu">arduino</div>
+    </div>
+    <h3 text-align:center>Passe o mouse por cima dos botões para ver o efeito fadeTo</h3>
+
+        
+    <script>
+       $('.itemMenu').mouseover(function(){
+            $(this).fadeTo(200,0.2)
+       })
+
+       $('.itemMenu').mouseleave(function(){
+            $(this).fadeTo(200,1)
+       })
+    </script>
+        
+</body>
+
+</html>
