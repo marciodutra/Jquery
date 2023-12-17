@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+
+        .caixa{
+            background-color: #ddd;
+            width: 200px;
+            height: 250px;
+            padding: 10px;
+            border: 5px solid #000;
+            margin: 5px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <div style="display: flex">
+        <div id="caixa1" class="caixa">
+            CFB Cursos
+        </div>
+        <div id="info" class="caixa">
+
+        </div>
+        <img src="query_53.jpg" width="550px"/>
+    </div>
+    
+
+    <script>
+        let cx=$("#caixa1")
+        $("#info").html(
+            "width: " + cx.width() + "<br/>height: " + cx.height()
+            + "<br/>innerwidth: " + cx.innerWidth() + "<br/>innerheight: " + cx.innerHeight()
+            + "<br/>outerwidth: " + cx.outerWidth() + "<br/>outerheight: " + cx.outerHeight()
+            + "<br/>outerwidth(true): " + cx.outerWidth(true) + "<br/>outerheight(true): " + cx.outerHeight(true)
+        )
+    </script>
+        
+</body>
+
+</html>
