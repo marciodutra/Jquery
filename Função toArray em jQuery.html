@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+
+        .caixa{
+            background-color: #ff0;
+            padding: 10px;
+            border: 3px solid #f00;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <div id="caixa1" class="caixa">
+        <h4 id="h4_1">CFB Cursos</h4>
+        <h4 id="h4_2">Curso de jQuery</h4>
+        <h4 id="h4_3">Função length</h4>
+        <h4 id="h4_4">cfbcursos.com.br</h4>
+        <h4 id="h4_5">youtube.com/cfbcursos</h4>
+    </div>
+
+    <div id="caixa2" class="caixa">
+        <p id="p1">CFB Cursos</p>
+        <p id="p2">Curso de jQuery</p>
+        <p id="p3">Função length</p>
+        <p id="p4">cfbcursos.com.br</p>
+        <p id="p5">youtube.com/cfbcursos</p>
+    </div>
+
+    <button id="p_para_caixa2">P para caixa 2</button>
+    <button id="h4_para_caixa2">H4 para caixa 2</button>
+    
+
+    <script>
+        let ep=$("p").toArray()
+        let eh=$("h4").toArray()
+
+         $("#p_para_caixa2").click(()=>{
+            $("#caixa2").append(ep)
+            $("#caixa1").append(eh)
+         })
+
+         $("#h4_para_caixa2").click(()=>{
+            $("#caixa2").append(eh)
+            $("#caixa1").append(ep)
+         })
+    </script>
+        
+</body>
+
+</html>
